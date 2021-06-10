@@ -1,0 +1,23 @@
+﻿<Window x:Class="TestJunRoboKommerc.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestJunRoboKommerc"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="MainWindow" Height="800" Width="700">
+    <Grid Background="#ffdadfda">
+        <Border MinWidth="600" Margin="15" Background="White" VerticalAlignment="Center" Padding="30" MaxWidth="550" CornerRadius="20">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="LightGray" ShadowDepth="10"></DropShadowEffect>
+            </Border.Effect>
+            <StackPanel>
+                <TextBox x:Name="tb2" Height="557"  IsReadOnly="True"/>
+                <Button Content="Открыть папку" Margin="0 20" Click="Button_Click"/>
+                <TextBox x:Name="tb1"  materialDesign:HintAssist.Hint="Введите путь(C:\DEV\Assemblies)" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+            </StackPanel>
+        </Border>
+
+    </Grid>
+</Window>
